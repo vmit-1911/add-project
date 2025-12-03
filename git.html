@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Travel Blog</title>
+
+    <!-- Simple CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #3c8dbc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .post {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #3c8dbc;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #336f97;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Travel Blog</h1>
+</header>
+
+<div class="container">
+
+    <div class="post">
+        <h2>Trip to the Mountains</h2>
+        <img src="https://via.placeholder.com/800x400?text=Mountains" alt="Mountains">
+        <p>I visited these beautiful mountains last summer. The weather was perfect and the view was amazing!</p>
+        <button onclick="likePost(this)">Like ❤️</button>
+    </div>
+
+    <div class="post">
+        <h2>Beach Adventure</h2>
+        <img src="https://via.placeholder.com/800x400?text=Beach" alt="Beach">
+        <p>Relaxing by the ocean was the best part of my trip. Soft sand and warm sunshine!</p>
+        <button onclick="likePost(this)">Like ❤️</button>
+    </div>
+
+</div>
+
+<!-- Simple JavaScript -->
+<script>
+    function likePost(button) {
+        button.innerText = "Liked ✔️";
+        button.style.background = "#2ecc71";
+    }
+</script>
+
+</body>
+</html>
